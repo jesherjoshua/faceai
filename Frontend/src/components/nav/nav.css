@@ -1,0 +1,82 @@
+.facerecognition__navbar {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+    padding : 2rem 6rem;
+}
+
+.facerecognition__navbar-links {
+    flex : 1;
+    display : flex;
+    justify-content: flex-start;
+    align-items: center;
+} 
+
+.gpt3__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.gpt3__navbar-links_logo img {
+    width : 50px;
+    height : 20px;    
+}
+
+.facerecognition__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.facerecognition__navbar-links_container p,
+.facerecognition__navbar-manu_container p{
+    color : #fff;
+    font-family: var(--font-family);
+    font-weight: 500; 
+    font-size : 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin : 0 1rem;
+    cursor : pointer;
+}
+
+.facerecognition__navbar-menu {
+    margin-left : 1rem;
+
+    display : none;
+    position: relative;
+}
+
+.facerecognition__navbar-menu_container {
+    display : flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    position: absolute;
+    padding : 2rem;
+    top : 40px;
+    right : 0;
+    margin-top : 1rem;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 210px;
+}
+
+.facerecognition__navbar-menu_container p {
+    margin : 1rem 0;
+}
+
+@media screen and (max-width : 1050px) {
+    .facerecognition__navbar-links_container {
+        display : none;
+    }
+
+    .facerecognition__navbar-menu {
+        display : flex; 
+    }
+
+}
+
