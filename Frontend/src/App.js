@@ -1,6 +1,6 @@
 import React from 'react';
-import {Blog,Footer,Possibility,Features,WhatGPT3,Header} from './container';
-import {Brand,Cta,Nav} from './components';
+import {Footer,WhatGPT3,Header} from './container';
+import {Brand,Team,Nav} from './components';
 import './app.css';
 
 const App = () => {
@@ -12,13 +12,8 @@ const App = () => {
       </div>
       <Brand />
       <WhatGPT3 />
-      <Features />
-      <Possibility />
-      <Cta />
-      <Blog />
+      <Team />
       <Footer />
-
-
     </div>
   )
 }

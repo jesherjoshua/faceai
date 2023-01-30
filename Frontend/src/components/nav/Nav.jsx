@@ -20,14 +20,14 @@ const Nav = () => {
     <div className="facerecognition__navbar">
       <div className="facerecognition__navbar-links">
         <div className="facerecognition__navbar-links_logo">
-          <img src="#" alt="logo"  />  
+          {/* <img src="#" alt="logo"  />   */}
+          <h3 id="facerecognition__navbar-titleHead">Gpt3</h3>
         </div>
         <div className="facerecognition__navbar-links_container">
           <Menu />
         </div> 
       </div>
-      <div className="facerecognition__navbar-menu">
-        {console.log(toggleMenu)}
+      <div className="facerecognition__navbar-menu"> 
         {toggleMenu 
           ? <RiCloseLine color="red" size={27} onClick={() => setToggleMenu(false)}/>
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)}/>

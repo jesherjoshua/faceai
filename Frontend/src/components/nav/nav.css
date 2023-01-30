@@ -2,8 +2,11 @@
     display : flex;
     justify-content: center;
     align-items: center;
+    position : fixed;
+    width : 100%;
 
     padding : 2rem 6rem;
+    background: rgba(1, 2, 68, 0.705)
 }
 
 .facerecognition__navbar-links {
@@ -28,7 +31,7 @@
 }
 
 .facerecognition__navbar-links_container p,
-.facerecognition__navbar-manu_container p{
+.facerecognition__navbar-menu_container-links p{
     color : #fff;
     font-family: var(--font-family);
     font-weight: 500; 
@@ -78,5 +81,8 @@
         display : flex; 
     }
 
+}
+#facerecognition__navbar-titleHead {
+    color : white;
 }
 

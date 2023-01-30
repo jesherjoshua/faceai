@@ -1,0 +1,32 @@
+.facerecognition__Whatgpt3 {
+    color : white;
+    padding : 50px 12px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.facerecognition__Whatgpt3-problem,
+.facerecognition__Whatgpt3-solution,
+.facerecognition__Whatgpt3-model {
+    display : flex;
+    justify-content: space-evenly;
+    margin : 50px 2px;
+}
+
+.facerecognition__Whatgpt3-model_image,
+.facerecognition__Whatgpt3-solution_image,
+.facerecognition__Whatgpt3-problem_image {
+    display : block;
+    flex : 1;
+    padding : 0 12px;
+}
+
+.facerecognition__Whatgpt3-problem_text,
+.facerecognition__Whatgpt3-solution_text,
+.facerecognition__Whatgpt3-model_text {
+    flex : 2;
+    flex-wrap: wrap;
+}
