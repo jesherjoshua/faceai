@@ -6,6 +6,7 @@ COPY . .
 RUN mkdir encode grouped source
 RUN apt-get update && apt-get install -y python3-opencv
 RUN pip install -r requirements.txt
+RUN mv models.py /usr/local/lib/python3.8/site-packages/keras_vggface/models.py
 
 ENTRYPOINT [ "python" ]
 CMD ["app.py"]
