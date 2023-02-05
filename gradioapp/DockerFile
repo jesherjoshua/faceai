@@ -1,0 +1,10 @@
+FROM python:3.8-slim
+
+WORKDIR /app
+COPY . .
+
+RUN mkdir encode grouped source
+RUN pip install -r requirements.txt
+
+ENTRYPOINT [ "python" ]
+CMD ["app.py"]
