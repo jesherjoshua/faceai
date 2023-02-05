@@ -45,7 +45,12 @@ def results():
 
 with gr.Blocks(title="Face AI") as demo:
     gr.HTML('''<h1 style="font-size:60px; text-align:center; font-family:futura; padding-top:20px" > Face AI </h1><br></br>
-    <p style="font-size:20px; text-align:center; font-family:futura">A one stop solution for Photographers to quickly find their client images.</p>''')
+    <p style="font-size:20px; text-align:center; font-family:futura">A one stop solution for Photographers to quickly find their client images.</p>
+    <style>
+    footer{
+        visibility:hidden;
+    }
+    </style>''')
     gr.Markdown('## Upload images of your client:')
     with gr.Row():
         inputs = gr.File(file_count="multiple",file_types=['image'])
@@ -58,6 +63,7 @@ with gr.Blocks(title="Face AI") as demo:
         outputs = gr.outputs.Textbox()
         btn1 = gr.Button("Upload").style(full_width=False)
     btn1.click(save_source, inputs=inputs, outputs=outputs)
+    
     with gr.Column():
         gallery = gr.Gallery().style(grid=[4], height="auto")
         btn = gr.Button("View Result").style(full_width=False)
