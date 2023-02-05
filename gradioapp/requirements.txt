@@ -3,6 +3,5 @@ keras_vggface
 mtcnn
 gradio
 pillow
-PIL
-cv2
+opencv-python
 scipy
