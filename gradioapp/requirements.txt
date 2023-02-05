@@ -4,4 +4,5 @@ mtcnn
 gradio
 pillow
 opencv-python
+Keras-Applications
 scipy
