@@ -43,7 +43,7 @@ def results():
     return res
 
 
-with gr.Blocks(title="Face AI", theme='huggingface') as demo:
+with gr.Blocks(title="Face AI") as demo:
     gr.HTML(
         """<h1 style="font-size:60px; text-align:center; font-family:futura; padding-top:20px" > Face AI </h1><br></br>
     <p style="font-size:20px; text-align:center; font-family:monospace">A one stop solution for Photographers to quickly find their client images.</p>
@@ -71,4 +71,4 @@ with gr.Blocks(title="Face AI", theme='huggingface') as demo:
         btn = gr.Button("View Result").style(full_width=False)
     btn.click(results, None, gallery)
 
-demo.launch(share=False, favicon_path="favicon.ico")
+demo.launch(share=False, favicon_path="favicon.ico",server_name="0.0.0.0",server_port=8080)
