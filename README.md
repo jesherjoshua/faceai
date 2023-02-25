@@ -19,8 +19,8 @@ FaceAI is a cutting-edge web application designed for photographers and image pr
 * The app leverages the TensorFlow deep learning framework to perform face embedding generation
 * The ResNet50 model, pre-trained on a large-scale facial recognition dataset, is used for feature extraction and embedding computation
 * The generated embeddings are compared against a pre-populated database of embeddings using efficient distance metric calculations
-* The user interface allows for batch processing of multiple images and supports querying the database with multiple names
-* The app is designed for high performance, utilizing techniques such as parallel processing and optimized data structures for large-scale image collections.
+* The user interface allows for batch processing of multiple images(including multiple targets)
+* The prototype is hosted on huggingface-spaces. 
 
 
 
@@ -29,9 +29,17 @@ FaceAI is a cutting-edge web application designed for photographers and image pr
 To use the app, you will need to:
 
 * Have a web browser (Chrome, Firefox, Safari, etc.)
-* Have an internet connection
-* Upload the images you want to search through and input the name of the person you're looking for.
+* Have an internet connection.
+* Upload the images you want to search through and of the target.
 * Our algorithm will then search through the images and return any matches it finds.
+
+## Quick Demo 
+
+<img width="763" alt="Screenshot 2023-02-25 at 8 37 54 AM" src="https://user-images.githubusercontent.com/87414375/221333207-3913a07c-95a1-48fb-87fc-2491ec6ff199.png">
+
+
+https://user-images.githubusercontent.com/87414375/221333231-8599f334-cd55-430d-8129-1fcae016a9bb.mov
+
 
 ## Support
 
